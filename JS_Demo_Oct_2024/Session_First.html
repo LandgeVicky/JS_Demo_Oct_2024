@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body style="text-align:center">
+
+    <a href="http://www.google.com" id="a1" onmouseout="mouseout();" onmouseover="mouseover();" target="_blank"
+       style="text-decoration:none">
+        VISIT GOOGLE
+    </a>
+
+    <br />
+
+    <label id="lbl"></label>
+
+    <script>
+
+        // alert popup
+        alert('Welcome to Maharashtra State');
+
+        // confirm popup
+        confirm('are you sure you want to use this');
+
+        //console log Msg
+        console.log("Welcome to our website");
+
+        // console error Msg
+        console.error('You need to regisered our website');
+
+        // inner text dynamically
+        document.getElementById('lbl').innerText = 'Welcome, User';
+        function mouseover() {
+            // text underline
+            var a1 = document.getElementById('a1');
+            a1.style.textDecoration = 'underline';
+        }
+
+        function mouseout() {
+            // text underline remove
+            var a1 = document.getElementById('a1');
+            a1.style.textDecoration = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JS_Demo_Oct_2024", "JS_Demo_Oct_2024\JS_Demo_Oct_2024.csproj", "{577EFC53-931C-4A1B-A265-650CF747139F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{577EFC53-931C-4A1B-A265-650CF747139F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577EFC53-931C-4A1B-A265-650CF747139F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577EFC53-931C-4A1B-A265-650CF747139F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577EFC53-931C-4A1B-A265-650CF747139F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B84D3368-4E2B-4952-9026-5A9D12EAC844}
+	EndGlobalSection
+EndGlobal
