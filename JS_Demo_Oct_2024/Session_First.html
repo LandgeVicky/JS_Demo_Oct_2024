@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html oncontextmenu="return false">
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -11,10 +11,22 @@
        style="text-decoration:none">
         VISIT GOOGLE
     </a>
-
+   
     <br />
 
     <label id="lbl"></label>
+
+    <br />
+    <br />
+
+
+    <a href="http://www.facebook.com" style="text-decoration:none"
+       id="f1" onmouseover="mouseoverf();" onmouseout="mouseoutf();"
+       >VISIT FACEBOOK</a>
+    <br />
+
+    <label style="color:red" id="j1"></label>
+
 
     <script>
 
@@ -44,6 +56,21 @@
             var a1 = document.getElementById('a1');
             a1.style.textDecoration = 'none';
         }
+
+        // facebook name text over
+        function mouseoverf() {
+            var f1 = document.getElementById('f1');
+            f1.style.textDecoration = 'underline';
+        }
+
+        // facebook name text underline out
+        function mouseoutf() {
+            f1 = document.getElementById('f1');
+            f1.style.textDecoration = 'none';
+        }
+
+        // label name given dynamically
+        document.getElementById('j1').innerText = 'Dairy And Milk Product';
     </script>
 </body>
 </html>
