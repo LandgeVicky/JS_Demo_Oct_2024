@@ -5,13 +5,13 @@
     <title></title>
     
 </head>
-<body style="text-align:center">
+<body >
 
     <a href="http://www.google.com" id="a1" onmouseout="mouseout();" onmouseover="mouseover();" target="_blank"
        style="text-decoration:none">
         VISIT GOOGLE
     </a>
-   
+
     <br />
 
     <label id="lbl"></label>
@@ -21,56 +21,28 @@
 
 
     <a href="http://www.facebook.com" style="text-decoration:none"
-       id="f1" onmouseover="mouseoverf();" onmouseout="mouseoutf();"
-       >VISIT FACEBOOK</a>
+       id="f1" onmouseover="mouseoverf();" onmouseout="mouseoutf();">VISIT FACEBOOK</a>
     <br />
 
-    <label style="color:red" id="j1"></label>
+    // text not copied style="user-select:none; <br />
+    <label style="color:red;user-select:none;" id="j1"></label><br />
 
+    <h2>Fund Transfer</h2>
+    <table >
+        <tr>
+            <td> Account Number:</td>
+            <td>
+                <input type="text" onpaste="return false" />
+            </td>
+        </tr>
+        <tr>
+            <td>Confirm Account Number</td>
+            <td>
+                <input type="text" onpaste="return false" />
+            </td>
+        </tr>
+    </table>
 
-    <script>
-
-        // alert popup
-        alert('Welcome to Maharashtra State');
-
-        // confirm popup
-        confirm('are you sure you want to use this');
-
-        //console log Msg
-        console.log("Welcome to our website");
-
-        // console error Msg
-        console.error('You need to regisered our website');
-
-        // inner text dynamically
-        document.getElementById('lbl').innerText = 'Welcome, User';
-        function mouseover() {
-            // text underline
-            var a1 = document.getElementById('a1');
-            a1.style.textDecoration = 'underline';
-        }
-
-        // sample code
-        function mouseout() {
-            // text underline remove
-            var a1 = document.getElementById('a1');
-            a1.style.textDecoration = 'none';
-        }
-
-        // facebook name text over
-        function mouseoverf() {
-            var f1 = document.getElementById('f1');
-            f1.style.textDecoration = 'underline';
-        }
-
-        // facebook name text underline out
-        function mouseoutf() {
-            f1 = document.getElementById('f1');
-            f1.style.textDecoration = 'none';
-        }
-
-        // label name given dynamically
-        document.getElementById('j1').innerText = 'Dairy And Milk Product';
-    </script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>
