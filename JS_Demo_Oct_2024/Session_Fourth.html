@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Basic HTML Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
     <style>
         table {
             border-collapse: collapse;
@@ -14,25 +15,109 @@
             padding: 8px;
             text-align: left;
         }
+    
+       /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+*/
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .dropdown-button:hover {
+                background-color: #45a049;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+        .show {
+            display: block;
+        }
     </style>
-</head>
+    </head>
 <body>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>New York</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>25</td>
-            <td>Los Angeles</td>
-        </tr>
-    </table>
-</body>
+
+    <h1>table code added</h1><br />
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+        </table><br /><br />
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Dropdown</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown() {
+                const dropdown = document.getElementById('dropdownMenu');
+                dropdown.classList.toggle('show');
+            }
+
+            // Close the dropdown if clicked outside
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropdown-button')) {
+                    const dropdowns = document.getElementsByClassName('dropdown-content');
+                    for (let i = 0; i < dropdowns.length; i++) {
+                        const openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            };
+        </script>
+
+    </body>
 </html>
