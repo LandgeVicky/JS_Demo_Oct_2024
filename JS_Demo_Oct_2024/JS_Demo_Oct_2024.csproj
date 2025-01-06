@@ -74,6 +74,9 @@
     <Content Include="Session_First.html" />
     <Content Include="Session_Fourth.html" />
     <Content Include="Session_Second.html" />
+    <Content Include="SPA_APP_Page\spapage.css" />
+    <Content Include="SPA_APP_Page\SpaPage.html" />
+    <Content Include="SPA_APP_Page\spapage.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

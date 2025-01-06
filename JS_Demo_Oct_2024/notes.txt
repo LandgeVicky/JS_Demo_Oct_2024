@@ -35,5 +35,10 @@ Branch Name : dev02/JS_Demo_06012025_SampleCode
 
 dev02/JS_Demo_06012025_CurrentDateTime
 
+// single page application below branch commited codes 
+Create a Single Page Application using HTML CSS & JavaScript
+
+dev02/JS_Demo_06012025_SinglePageApp
+
 
 
