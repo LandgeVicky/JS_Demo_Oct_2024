@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="notes.txt" />
+    <Content Include="SampleForm.html" />
     <Content Include="scripts\home.js" />
     <Content Include="Session_First.html" />
     <Content Include="Session_Fourth.html" />
