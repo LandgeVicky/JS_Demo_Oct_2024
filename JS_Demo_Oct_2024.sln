@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JS_Demo_Oct_2024", "JS_Demo_Oct_2024\JS_Demo_Oct_2024.csproj", "{577EFC53-931C-4A1B-A265-650CF747139F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_JAN_2025", "MVC_JAN_2025\MVC_JAN_2025.csproj", "{D21A8A13-A5E9-4464-9703-4685BFFCAD41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{577EFC53-931C-4A1B-A265-650CF747139F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577EFC53-931C-4A1B-A265-650CF747139F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577EFC53-931C-4A1B-A265-650CF747139F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21A8A13-A5E9-4464-9703-4685BFFCAD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21A8A13-A5E9-4464-9703-4685BFFCAD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21A8A13-A5E9-4464-9703-4685BFFCAD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21A8A13-A5E9-4464-9703-4685BFFCAD41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
