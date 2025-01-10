@@ -3,3 +3,8 @@ Today Create this project and this is dot net version 6
 
 New branch Create
 dev02/MVC_JAN_2025/09012025_ProjectAdded
+
+Date => 10/01/2025
+-- mvc ViewData TempData QueryString
+
+dev02/MVC_JAN_2025/10012025_ViewTempData
