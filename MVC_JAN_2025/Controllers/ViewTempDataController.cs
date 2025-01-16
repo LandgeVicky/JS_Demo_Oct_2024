@@ -10,6 +10,9 @@ namespace MVC_JAN_2025.Controllers
                 ViewData["Message"] = "Hello from ViewData!";
                 ViewData["CurrentDate"] = DateTime.Now;
 
+            // some changes from my side
+            ViewData["CName"] = "Jaya milk and milk product";
+
                 // Example of using TempData
                 TempData["Notification"] = "This is a TempData notification!";
 
