@@ -5,3 +5,95 @@
 <h1 >My compnay name is :@ViewData["CName"]</h1>
 
 <a asp-controller="ViewTempData" asp-action="Details" asp-route-id="123">Go to Details</a>
+
+@* // new code added slider *@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /*   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    } */
+
+    .slider {
+        width: 80%;
+        max-width: 800px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+    .navigation {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: -50px;
+    }
+
+        .navigation button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+            .navigation button:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+</style>
+
+<div class="slider">
+    <div class="slides" id="slides">
+        @* <img src="/mnt/data/IMG_20231008_114821.jpg" alt="Slide 1">
+        <img src="/mnt/data/IMG_20231008_114822.jpg" alt="Slide 2">
+        <img src="/mnt/data/IMG_20231008_115215.jpg" alt="Slide 3"> *@
+        <img src="~/images/img_20231008_114639.jpg" height="200px" width="200px" alt="slide 1" />
+        <img src="~/images/apache rr .png" height="200px" width="200px" alt="slide 1" />
+        <img src="~/images/img_20231008_114822.jpg" height="200px" width="200px" alt="slide 1" />
+    </div>
+    <div class="navigation">
+        <button onclick="prevSlide()">&#10094; Prev</button>
+        <button onclick="nextSlide()">Next &#10095;</button>
+    </div>
+</div>
+
+<script>
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slideWidth = slides.clientWidth;
+        slides.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+    }
+</script>
